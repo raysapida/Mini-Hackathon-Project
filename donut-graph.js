@@ -2,12 +2,12 @@
 $(document).ready(function(){
 	$('#analyze').on('click', function(event){
 		event.preventDefault();
-		createGraph;
+		createGraph();
 	})
 })
 
 function createGraph(){
-	var svg = d3.select("body")
+	var svg = d3.select("#sentiment")
 	.append("svg")
 	.append("g")
 
