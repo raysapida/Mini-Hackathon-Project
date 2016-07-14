@@ -3,7 +3,17 @@
   "manifest_version" : 2,
   "version" : "0.1",
   "description" : "Here goes the description",
+  "content_scripts" : [
+    {
+      "js": ["jquery-3.0.0.min.js", "content.js"]
+    }
+  ],
+
   "browser_action" : {
     "default_icon" : "icon.png"
-  }
+  },
+
+  "permissions" : [
+    "activeTab"
+    ]
 }
