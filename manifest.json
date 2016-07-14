@@ -4,8 +4,9 @@
   "version" : "0.1",
   "description" : "Here goes the description",
   "content_scripts" : [
-    {
-      "js": ["jquery-3.0.0.min.js", "content.js"]
+    { "matches" : ["https://mail.google.com/*"],
+      "css" : [],
+      "js" : ["jquery-3.0.0.min.js", "content.js"]
     }
   ],
 
