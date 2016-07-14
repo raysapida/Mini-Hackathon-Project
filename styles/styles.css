@@ -1,7 +1,15 @@
+.main-content{
+  height: 690px;
+}
+
 .input{
-  background-color: blue;
+  background-color: teal;
+  height: 100%;
 }
 
 .analysis{
   background-color: tan;
+  border: 1px solid black;
+  height: 100%;
 }
+

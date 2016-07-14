@@ -4,19 +4,27 @@
   <title>Sentimail</title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>This is our page</h1>
-<div class="col-md-6 left">
-  <p>input form</p>
-  <form>
-    <input type="textarea" width="">
-    <input type="submit" value="Analyze">
-  </form>
+  <div class="container">
+    <h1>This is our page</h1>
 
-</div>
-<div class="col-md-6 analysis"><p>results</p></div>
+    <div class="main-content">
+      <div class="col-md-6 input">
+        <h2>Type text to be analyzed</h2>
+        <form>
+          <textarea class="form-control" style="min-width: 100%" rows="25"></textarea><br><br>
+          <button class="btn btn-primary"><span>Analyze</span></button>
+        </form>
+      </div>
 
+      <div class="col-md-6 analysis">
+        <p>results</p>
+      </div>
+  
+    </div>
+  </div>
 </body>
 </html>
