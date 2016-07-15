@@ -83,8 +83,7 @@
        <button id="analyze" class="btn btn-primary"><span>Analyze</span></button>
      </form>
    </div>
-
-   <div class="col-md-6 analysis">
+   <div class="col-md-6 analysis result-wrapper">
     <h2>Results</h2>
     <div class="row">
       <div class="col-md-6">
@@ -103,32 +102,36 @@
     <br>
 
     <div class="panel panel-default">
-      <div class="panel-heading">Emotions Analysis</div>
-      <div class="panel-body">
-        <div id="donut-chart">
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="panel panel-default">
       <div class="panel-heading">Formality Indicator</div>
       <div class="panel-body" id="formality-score"></div>
     </div>
 
     <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Emotions Analysis</div>
+          <div class="panel-body">
+            <div id="donut-chart">
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="panel panel-default">
-      <div class="panel-heading">Sentiment Analysis</div>
-      <div class="panel-body">
-        <div id="figure">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">Sentiment Analysis</div>
+          <div class="panel-body">
+            <div id="figure">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
+
 </div>
+
 </center></div>
 
 </body>

@@ -13,7 +13,7 @@ function createToneChart(responseData){
 	svg.append("g")
 	.attr("class", "lines");
 
-	var width = 350,
+	var width = 290,
 	height = 200,
 	radius = Math.min(width, height) / 2;
 

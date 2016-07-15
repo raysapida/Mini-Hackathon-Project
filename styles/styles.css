@@ -43,8 +43,8 @@ body{
 }
 
 svg{
-	width: 600px;
-	height: 600px;
+	width: 300px;
+	height: 200px;
 	/*width: 1000%;*/
 	/*height: 1000%;*/
 	/*max-width: 100%;*/
@@ -86,4 +86,8 @@ polyline{
 
 .label-danger {
 	background-color: #F08D21;
+}
+
+.result-wrapper{
+	overflow: scroll;
 }
