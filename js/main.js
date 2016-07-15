@@ -8,9 +8,10 @@ $(document).ready(function(){
       }
       );
     event.preventDefault();
-    // createGraph();
     var body = document.getElementById('text-to-analyze').value
     wordCount(body);
     analyzeTone(body);
+    timeToRead(body);
+    analyzeFormality(body);
   })
 })

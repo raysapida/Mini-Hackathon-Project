@@ -11,6 +11,8 @@
   <script src = "js/tone_analyzer.js"></script>
   <script src = "js/donut-graph.js"></script>
   <script src = "js/word_count.js"></script>
+  <script src = "js/time_to_read.js"></script>
+  <script src = "js/formality.js"></script>
 </head>
 <body>
 
@@ -31,7 +33,7 @@
         <h3>Results</h3>
         <div class="panel panel-default">
           <div class="panel-heading">Time to Read</div>
-          <div class="panel-body">Here goes the time to read</div>
+          <div class="panel-body" id="time-to-read"></div>
         </div>
 
         <br>
@@ -54,7 +56,14 @@
         <br>
 
         <div class="panel panel-default">
-          <div class="panel-heading">Language Style</div>
+          <div class="panel-heading">Formality Indicator</div>
+          <div class="panel-body" id="formality-score"></div>
+        </div>
+
+        <br>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">Sentiment Analysis</div>
           <div class="panel-body">
             <div id="figure">
             </div>
