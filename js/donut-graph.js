@@ -1,4 +1,4 @@
-function createGraph(){
+function createToneChart(){
 	var svg = d3.select("#donut-chart")
 	.append("svg")
 	.append("g")
