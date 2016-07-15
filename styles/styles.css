@@ -1,4 +1,4 @@
-@font-face { font-family: Raleway; src: url('Raleway-Regular.ttf'); } 
+@font-face { font-family: Raleway; src: url('Raleway-Regular.ttf'); }
 
 div {
 	font-family: Raleway;
@@ -87,6 +87,7 @@ polyline{
 .label-danger {
 	background-color: #F08D21;
 }
+
 
 .result-wrapper{
 	overflow: scroll;
