@@ -31,7 +31,14 @@ var formalityLibrary = [
 		word: "&",
 		type: "Informal",
 		comment: "Consider changing to 'and'."
-	}
+	},
+
+	{
+		word: "Mr.",
+		type: "formal",
+		comment: ""
+	}	
+
 ];
 
 function formalityCounter(obj){
@@ -52,27 +59,15 @@ function formalityCounter(obj){
 			}
 		}
 	}
-	console.log("Informal words count:");
-	console.log(informalCount);
-	console.log("Formal words count:");
-	console.log(formalCount);
-	console.log(wordSuggestions);
-
+	var formalityScore = ((formalCount/(formalCount+informalCount)) * 100 );
+	formalityIndicator(formalityScore, wordSuggestions);
 }
 
-  //if word in obj is present in formalityLibrary,
-  /// increment depending on type
-  //// if type is Informal,
-  ///// push suggestion to wordSuggestions
+function formalityIndicator(formalityScore, wordSuggestions){
 
+	formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
 
-// FOR each word in the array, compare the word to formality library.
+	$("#formality-score").append(formalityHTML);
 
-
-	// check if it's included
-	// if it included, increment style type
-		// push the word and the comments from the library to separate array.
-
-//print out the separate array of suggestions.
-
+}
 
