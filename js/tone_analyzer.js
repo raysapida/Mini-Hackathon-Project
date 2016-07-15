@@ -6,7 +6,7 @@ function analyzeTone(str){
       });
 
     ajaxRequest.done(createToneChart);
-    ajaxRequest.done(createStackedBarChart);
+    ajaxRequest.done(createEmotionChart);
     ajaxRequest.fail(function(){
       console.log("Ajax call failed");
     });

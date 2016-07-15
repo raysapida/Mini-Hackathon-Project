@@ -43,8 +43,8 @@ body{
 }
 
 svg{
-	width: 600px;
-	height: 600px;
+	width: 500px;
+	height: 200px;
 	/*width: 1000%;*/
 	/*height: 1000%;*/
 	/*max-width: 100%;*/
@@ -88,6 +88,9 @@ polyline{
 	background-color: #F08D21;
 }
 
-.btn-deactivated {
-  background-color: grey;
+
+.result-wrapper{
+	overflow: scroll;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
