@@ -72,3 +72,9 @@ polyline{
 #profile-setting {
 	background-color: #00A0E8;
 }
+
+.form-control {
+	width: 90%;
+	height: 50%;
+}
+
