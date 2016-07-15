@@ -1,3 +1,9 @@
+@font-face { font-family: Raleway; src: url('Raleway-Regular.ttf'); } 
+
+div {
+	font-family: Raleway;
+}
+
 .main-content{
   height: 690px;
 }
