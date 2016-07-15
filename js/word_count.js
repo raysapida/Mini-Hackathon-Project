@@ -58,7 +58,6 @@ function appendTopWords(topWords){
   topWordsHTML = ""
 
   for(var i = 0; i < topWords.length; i++){
-    console.log(topWords[i][0]);
     topWordsHTML = topWordsHTML.concat("<span class='label label-primary'>" + topWords[i][0] + "</span>" + "<span class='label label-danger'>" + topWords[i][1] + "</span>" + "&nbsp;");
   }
 
