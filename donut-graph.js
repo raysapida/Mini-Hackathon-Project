@@ -3,6 +3,8 @@ $(document).ready(function(){
 	$('#analyze').on('click', function(event){
 		event.preventDefault();
 		createGraph;
+		var body = document.getElementById('text-to-analyze').value
+		wordCount(body);
 	})
 })
 
