@@ -1,4 +1,4 @@
-var body = "Mr. Jones,\nI have been researching our choices for internet providers over the past week, and I wanted to update you on my progress. We have two options: H.C. Cable and Toll South. Both offer business plans, and I will go over the business pricing of each plan at the meeting on Tuesday. Both of the business options I listed have comparable speed and data usage offerings as well. I called your personal provider, GoGo Satellite, but they did not have any business offerings. They primarily do residential internet service.\n I will talk with Joe and Susan in IT about these options and get their suggestions. I will also send out meeting requests to everyone, including Mr. Morris in operations. If you have any questions prior to the meeting, please let me know.\n Respectfully,\nTina McAden\nAdministrative Assistant\nJones Office Solutions\nhttp://www.jonesofficesolutions.com\n(555) 124-5678"
+// var body = "Mr. Jones,\nI have been researching our choices for internet providers over the past week, and I wanted to update you on my progress. We have two options: H.C. Cable and Toll South. Both offer business plans, and I will go over the business pricing of each plan at the meeting on Tuesday. Both of the business options I listed have comparable speed and data usage offerings as well. I called your personal provider, GoGo Satellite, but they did not have any business offerings. They primarily do residential internet service.\n I will talk with Joe and Susan in IT about these options and get their suggestions. I will also send out meeting requests to everyone, including Mr. Morris in operations. If you have any questions prior to the meeting, please let me know.\n Respectfully,\nTina McAden\nAdministrative Assistant\nJones Office Solutions\nhttp://www.jonesofficesolutions.com\n(555) 124-5678"
 
 
 var toRemoveArray = ['and', 'I', 'the' , 'have', 'to', 'will'];
@@ -9,9 +9,8 @@ function wordCount(str){
   var cleanStrArray = removeKeyWords(strArray,toRemoveArray);
   var wordMap = groupByOccurence(cleanStrArray);
   var sortedWords = sortByOccurence(wordMap);
-  console.log(sortedWords);
   var topWords = selectTopWords(sortedWords, 5);
-  console.log(topWords);
+  var topWordsHTML = appendTopWords(topWords);
 }
 
 function removeKeyWords(keepArray,toRemoveArray){
@@ -55,5 +54,13 @@ function selectTopWords(arr, n){
   return topWords
 }
 
+function appendTopWords(topWords){
+  topWordsHTML = ""
 
-wordCount(body);
+  for(var i = 0; i < topWords.length; i++){
+    console.log(topWords[i][0]);
+    topWordsHTML = topWordsHTML.concat("<span class='label label-primary'>" + topWords[i][0] + "</span>" + "<span class='label label-danger'>" + topWords[i][1] + "</span>" + "&nbsp;");
+  }
+
+  $("#top-words").append(topWordsHTML);
+}
