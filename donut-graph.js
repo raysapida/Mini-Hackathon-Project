@@ -1,13 +1,20 @@
 
 $(document).ready(function(){
 	$('#analyze').on('click', function(event){
+		$( "#analyze" ).toggle(
+			function() {
+				$( this ).show("#sentiment");
+			}, function() {
+				$( this ).hide("#analyze");
+			}
+			);
 		event.preventDefault();
-		createGraph;
+		createGraph();
 	})
 })
 
 function createGraph(){
-	var svg = d3.select("body")
+	var svg = d3.select("#donut-chart")
 	.append("svg")
 	.append("g")
 
@@ -41,13 +48,17 @@ function createGraph(){
 	var key = function(d){ return d.data.label; };
 
 	var color = d3.scale.ordinal()
-	.domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
-	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+	.domain(["Content", "Disgust", "Anger", "Calm", "Joy" ])
+	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
+
 
 	function randomData (){
-		var labels = color.domain();
-		return labels.map(function(label){
-			return { label: label, value: Math.random() }
+		var dataPoints = color.domain();
+		var dataValues = [1, 4, 0.6, 7, 9];
+		var i = -1
+		return dataPoints.map(function(dataPoint){
+			i ++;
+			return { label: dataPoint, value: dataValues[i] }
 		});
 	}
 
