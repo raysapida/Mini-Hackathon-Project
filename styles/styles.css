@@ -6,16 +6,27 @@ div {
 
 .main-content{
   height: 690px;
+  margin: auto;
+  width: 150%;
+  padding: 10px;
+}
+
+h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.analysis, .input {
+  border-radius: 25px;
 }
 
 .input{
-  background-color: teal;
+  background-color: #00A0E8;
   height: 100%;
 }
 
 .analysis{
-  background-color: tan;
-  border: 1px solid black;
+  background-color: #A4D800;
   height: 100%;
 }
 
@@ -52,4 +63,12 @@ polyline{
 #sentiment{
 	height: 900px;
 	width: 400px;
+}
+
+#analyze {
+	background-color: #F08D21;
+}
+
+#profile-setting {
+	background-color: #00A0E8;
 }
