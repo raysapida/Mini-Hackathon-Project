@@ -1,6 +1,13 @@
 
 $(document).ready(function(){
 	$('#analyze').on('click', function(event){
+		$( "#analyze" ).toggle(
+			function() {
+				$( this ).show("#sentiment");
+			}, function() {
+				$( this ).hide("#analyze");
+			}
+			);
 		event.preventDefault();
 		createGraph();
 	})
@@ -41,13 +48,13 @@ function createGraph(){
 	var key = function(d){ return d.data.label; };
 
 	var color = d3.scale.ordinal()
-	.domain(["Lorem ipsum", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
-	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+	.domain([{name: "Content", value: 2} , {name: "Disgust", value : 5} , {name: "Anger", value: 3} , {name: "Calm", value: 9} , {name: "Joy" , value: 10}])
+	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
 
 	function randomData (){
-		var labels = color.domain();
-		return labels.map(function(label){
-			return { label: label, value: Math.random() }
+		var dataPoints = color.domain();
+		return dataPoints.map(function(dataPoint){
+			return { label: dataPoint.name, value: dataPoint.value }
 		});
 	}
 
