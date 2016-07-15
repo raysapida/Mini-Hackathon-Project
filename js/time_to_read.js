@@ -1,9 +1,7 @@
 function timeToRead(str){
-  console.log('Time to read');
   var wordsPerMinute = 225;
   var wordArray = str.split(' ');
   var timeInSeconds = (wordArray.length / wordsPerMinute) * 60;
-  console.log(timeInSeconds);
   appendTimeToRead(timeInSeconds);
 }
 
