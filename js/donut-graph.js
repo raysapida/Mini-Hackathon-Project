@@ -37,7 +37,7 @@ function createToneChart(responseData){
 
 	var color = d3.scale.ordinal()
 	.domain(["Content", "Disgust", "Anger", "Calm", "Joy" ])
-	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
+	.range(["#FB5607", "#FFBE0B", "#FF006E", "#3A86FF", "#8338EC"]);
 
 
 	function randomData (){
