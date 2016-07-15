@@ -1,4 +1,10 @@
-function createToneChart(){
+function createToneChart(responseData){
+
+	var data = responseData.document_tone.tone_categories[0].tones;
+	console.log(data);
+
+
+
 	var svg = d3.select("#donut-chart")
 	.append("svg")
 	.append("g")
@@ -10,8 +16,8 @@ function createToneChart(){
 	svg.append("g")
 	.attr("class", "lines");
 
-	var width = 960,
-	height = 450,
+	var width = 350,
+	height = 200,
 	radius = Math.min(width, height) / 2;
 
 	var pie = d3.layout.pie()
@@ -38,12 +44,12 @@ function createToneChart(){
 
 
 	function randomData (){
-		var dataPoints = color.domain();
-		var dataValues = [1, 4, 0.6, 7, 9];
-		var i = -1
-		return dataPoints.map(function(dataPoint){
-			i ++;
-			return { label: dataPoint, value: dataValues[i] }
+		// var dataPoints = color.domain();
+		// var dataValues = [1, 4, 0.6, 7, 9];
+		// var i = -1
+		return data.map(function(dataPoint){
+			// i ++;
+			return { label: dataPoint.tone_name, value: dataPoint.score }
 		});
 	}
 
