@@ -8,6 +8,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src = "http://d3js.org/d3.v3.min.js"></script>
 	<script src = "donut-graph.js"></script>
+  <script src = "word_count.js"></script>
 </head>
 <body>
 
@@ -19,28 +20,36 @@
 			<div class="col-md-6 input">
 				<h2>Type text to be analyzed</h2>
 				<form>
-					<textarea class="form-control" style="min-width: 100%" rows="25"></textarea><br><br>
+					<textarea class="form-control" id="text-to-analyze" style="min-width: 100%" rows="25"></textarea><br><br>
 					<button id="analyze" class="btn btn-primary"><span>Analyze</span></button>
 				</form>
 			</div>
 
 			<div class="col-md-6 analysis">
-				<div class="panel panel-default">
-					<div class="panel-heading">Results</div>
-					<div class="panel-body">Time to Read</div>
-					<div class="sentiment">
-						<div id="sentiment" class="panel-body">Sentiment Analysis <br>
-							<div id="donut-chart">
-								
-							</div>
-							
-						</div>
-					</div>
-					<div class="panel-body">Top 3 Words</div>
-					<div class="panel-body">Formality Analysis</div>
-				</div>
-			</div>
+        <h3>Results</h3>
+        <div class="panel panel-default">
+          <div class="panel-heading">Time to Read</div>
+          <div class="panel-body">Here goes the time to read</div>
+        </div>
 
+        <br>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">Top 3 Words</div>
+          <div class="panel-body" id="top-words"></div>
+        </div>
+
+        <br>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">Sentiment Analysis</div>
+          <div class="panel-body">
+              <div id="donut-chart">  
+              </div>
+          </div>
+        </div>
+
+      </div>
 		</div>
 	</div>
 
