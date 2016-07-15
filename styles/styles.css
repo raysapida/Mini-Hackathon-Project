@@ -80,3 +80,10 @@ polyline{
 	height: 50%;
 }
 
+.label-primary {
+	background-color: #00A0E8;
+}
+
+.label-danger {
+	background-color: #F08D21;
+}
