@@ -14,7 +14,7 @@ $(document).ready(function(){
 })
 
 function createGraph(){
-	var svg = d3.select("#sentiment")
+	var svg = d3.select("#donut-chart")
 	.append("svg")
 	.append("g")
 
@@ -48,13 +48,17 @@ function createGraph(){
 	var key = function(d){ return d.data.label; };
 
 	var color = d3.scale.ordinal()
-	.domain([{name: "Content", value: 2} , {name: "Disgust", value : 5} , {name: "Anger", value: 3} , {name: "Calm", value: 9} , {name: "Joy" , value: 10}])
+	.domain(["Content", "Disgust", "Anger", "Calm", "Joy" ])
 	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
+
 
 	function randomData (){
 		var dataPoints = color.domain();
+		var dataValues = [1, 4, 0.6, 7, 9];
+		var i = -1
 		return dataPoints.map(function(dataPoint){
-			return { label: dataPoint.name, value: dataPoint.value }
+			i ++;
+			return { label: dataPoint, value: dataValues[i] }
 		});
 	}
 
