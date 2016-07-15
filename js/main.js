@@ -1,17 +1,15 @@
 $(document).ready(function(){
   $('#analyze').on('click', function(event){
-    $( "#analyze" ).toggle(
-      function() {
-        $( this ).show("#sentiment");
-      }, function() {
-        $( this ).hide("#analyze");
-      }
-      );
+    $( this ).css({'background-color': 'grey'});
+    $( this ).prop('disabled', true);
     event.preventDefault();
-    var body = document.getElementById('text-to-analyze').value
-    wordCount(body);
-    analyzeTone(body);
-    timeToRead(body);
-    analyzeFormality(body);
+    if ($(this).disabled !== true) {
+      var body = document.getElementById('text-to-analyze').value
+      wordCount(body);
+      analyzeTone(body);
+      timeToRead(body);
+      analyzeFormality(body);
+    }
+
   })
 })
