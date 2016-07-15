@@ -1,16 +1,14 @@
 function timeToRead(str){
-  console.log('Time to read');
   var wordsPerMinute = 225;
   var wordArray = str.split(' ');
   var timeInSeconds = (wordArray.length / wordsPerMinute) * 60;
-  console.log(timeInSeconds);
-  appendTimeToRead(timeInSeconds);
+  appendTimeToRead(Math.floor(timeInSeconds));
 }
 
 
 
 function appendTimeToRead(seconds){
-  timeToReadHTML = "<h3>" + seconds + "</h3>"
+  timeToReadHTML = "<h3>" + seconds + "<small> Seconds</small></h3>"
 
   $("#time-to-read").append(timeToReadHTML);
 }

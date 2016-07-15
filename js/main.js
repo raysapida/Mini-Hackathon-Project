@@ -12,5 +12,6 @@ $(document).ready(function(){
     wordCount(body);
     analyzeTone(body);
     timeToRead(body);
+    analyzeFormality(body);
   })
 })
