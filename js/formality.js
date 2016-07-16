@@ -58,7 +58,6 @@ function formalityCounter(obj){
 	var informalCount = 0;
 	var formalCount = 0;
 	for (var term in obj){
-		// console.log(term);
 		for (var i = 0; i < formalityLibrary.length; i++){
 			if (term.toLowerCase() === formalityLibrary[i].word.toLowerCase()){
 				if (formalityLibrary[i].type === "Informal"){
@@ -76,9 +75,11 @@ function formalityCounter(obj){
 }
 
 function appendFormalityIndicator(formalityScore){
-
-	formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
-
+	if(formalityScore == NaN){
+		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
+	}else{
+		formalityHTML = "<h3>We don't have enough data to analyze your formality score.<br>Please provide a longer text.</h3>";
+	}
 	$("#formality-score").append(formalityHTML);
 
 }
