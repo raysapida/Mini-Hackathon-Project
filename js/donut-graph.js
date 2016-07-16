@@ -1,4 +1,5 @@
-function createToneChart(responseData){
+function createToneChart(responseData,location){
+	console.log(location);
 
 	var data = responseData.document_tone.tone_categories[0].tones;
 
@@ -41,11 +42,7 @@ function createToneChart(responseData){
 
 
 	function randomData (){
-		// var dataPoints = color.domain();
-		// var dataValues = [1, 4, 0.6, 7, 9];
-		// var i = -1
 		return data.map(function(dataPoint){
-			// i ++;
 			return { label: dataPoint.tone_name, value: dataPoint.score }
 		});
 	}
