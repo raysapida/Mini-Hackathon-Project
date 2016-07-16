@@ -28,6 +28,18 @@ var formalityLibrary = [
 },
 
 {
+	word: "prior",
+	type: "Formal",
+	comment: ""
+},
+
+{
+	word: "researching",
+	type: "Formal",
+	comment: ""
+},
+
+{
 	word: "&",
 	type: "Informal",
 	comment: "Consider changing to 'and'."
@@ -42,7 +54,6 @@ var formalityLibrary = [
 ];
 
 function formalityCounter(obj){
-	console.log(obj);
 	var wordSuggestions = [];
 	var informalCount = 0;
 	var formalCount = 0;
