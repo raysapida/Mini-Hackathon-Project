@@ -28,6 +28,18 @@ var formalityLibrary = [
 },
 
 {
+	word: "prior",
+	type: "Formal",
+	comment: ""
+},
+
+{
+	word: "researching",
+	type: "Formal",
+	comment: ""
+},
+
+{
 	word: "&",
 	type: "Informal",
 	comment: "Consider changing to 'and'."
@@ -42,12 +54,10 @@ var formalityLibrary = [
 ];
 
 function formalityCounter(obj){
-	console.log(obj);
 	var wordSuggestions = [];
 	var informalCount = 0;
 	var formalCount = 0;
 	for (var term in obj){
-		// console.log(term);
 		for (var i = 0; i < formalityLibrary.length; i++){
 			if (term.toLowerCase() === formalityLibrary[i].word.toLowerCase()){
 				if (formalityLibrary[i].type === "Informal"){
@@ -65,21 +75,25 @@ function formalityCounter(obj){
 }
 
 function appendFormalityIndicator(formalityScore){
-
-	formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
-
+	if(formalityScore == NaN){
+		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
+	}else{
+		formalityHTML = "<h6>We don't have enough data to analyze your formality score.<br>Please provide a longer text.</h6>";
+	}
 	$("#formality-score").append(formalityHTML);
 
 }
 
 function appendFormalitySuggestions(wordSuggestions){
-	var suggestionHTML = "<hr><h4>How you can improve:</h4><dl class='dl-horizontal'>"
-	
-	for (var i = 0; i < wordSuggestions.length; i++){
-		suggestionHTML = suggestionHTML.concat("<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>")
+	var suggestionHTML = ""
+	if(wordSuggestions != ""){
+		for (var i = 0; i < wordSuggestions.length; i++){
+			suggestionHTML = "<hr><h4>How you can improve:</h4><dl class='dl-horizontal'>" + "<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>"
+		}
+		suggestionHTML = suggestionHTML.concat("</dl>");
+	} else {
+		suggestionHTML = "<h6>We don't have enough data to provide suggestions on improving your formality score.</h6>"
 	}
-
-	suggestionHTML = suggestionHTML.concat("</dl>");
 
 	$("#formality-score").append(suggestionHTML);
 }

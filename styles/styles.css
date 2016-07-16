@@ -1,9 +1,3 @@
-@font-face { font-family: Raleway; src: url('Raleway-Regular.ttf'); }
-
-div {
-	font-family: Raleway;
-}
-
 .main-content{
   height: 690px;
   margin: auto;
@@ -91,6 +85,4 @@ polyline{
 
 .result-wrapper{
 	overflow: scroll;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }

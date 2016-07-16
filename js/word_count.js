@@ -49,8 +49,14 @@ function sortByOccurence(obj){
 
 function selectTopWords(arr, n){
   var topWords = [];
-  for(var i = 0 ; i < n; i++){
-    topWords.push(arr[i])
+  if(arr.length < n){
+    for(var i = 0 ; i < arr.length; i++){
+      topWords.push(arr[i])
+    }
+  } else {
+    for(var i = 0 ; i < n; i++){
+      topWords.push(arr[i])
+    }
   }
   return topWords
 }

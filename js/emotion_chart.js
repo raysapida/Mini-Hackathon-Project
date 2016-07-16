@@ -1,7 +1,6 @@
 function createEmotionChart(responseData){
 
 	var data = responseData.document_tone.tone_categories[1].tones;
-	console.log(data);
 
 	var svg = d3.select("#tone")
 	.append("svg")
@@ -42,11 +41,7 @@ function createEmotionChart(responseData){
 
 
 	function randomData (){
-		// var dataPoints = color.domain();
-		// var dataValues = [1, 4, 0.6, 7, 9];
-		// var i = -1
 		return data.map(function(dataPoint){
-			// i ++;
 			return { label: dataPoint.tone_name, value: dataPoint.score }
 		});
 	}
