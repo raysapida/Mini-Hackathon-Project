@@ -1,5 +1,4 @@
-function createToneChart(responseData,location){
-	console.log(location);
+function createToneChart(responseData){
 
 	var data = responseData.document_tone.tone_categories[0].tones;
 

@@ -1,7 +1,6 @@
 function createEmotionChart(responseData){
 
 	var data = responseData.document_tone.tone_categories[1].tones;
-	console.log(data);
 
 	var svg = d3.select("#tone")
 	.append("svg")
