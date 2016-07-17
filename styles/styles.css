@@ -91,3 +91,7 @@ polyline{
 .word-count{
   display: inline-block;
 }
+
+dd{
+  text-align: left;
+}
