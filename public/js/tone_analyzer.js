@@ -1,6 +1,6 @@
 function analyzeTone(str){
   var ajaxRequest = $.ajax({
-      url: "http://sentimail-api.herokuapp.com/tone",
+      url: "https://sentimail-api.herokuapp.com/tone",
       method: "POST",
       data: {content: str},
       });
