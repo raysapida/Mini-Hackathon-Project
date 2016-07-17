@@ -22,6 +22,8 @@ h2 {
 .analysis{
   background-color: #A4D800;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container{
@@ -82,7 +84,10 @@ polyline{
 	background-color: #F08D21;
 }
 
-
 .result-wrapper{
-	overflow: scroll;
+	overflow-y: scroll;
+}
+
+.word-count{
+  display: inline-block;
 }
