@@ -18,7 +18,7 @@ var formalityLibrary = [
 {
 	word: "got",
 	type: "Informal",
-	comment: "Consider using have"
+	comment: "Consider using have."
 },
 
 {
@@ -47,7 +47,7 @@ var formalityLibrary = [
 
 {
 	word: "Mr.",
-	type: "formal",
+	type: "Formal",
 	comment: ""
 }	
 
@@ -57,6 +57,7 @@ function formalityCounter(obj){
 	var wordSuggestions = [];
 	var informalCount = 0;
 	var formalCount = 0;
+
 	for (var term in obj){
 		for (var i = 0; i < formalityLibrary.length; i++){
 			if (term.toLowerCase() === formalityLibrary[i].word.toLowerCase()){
@@ -75,7 +76,7 @@ function formalityCounter(obj){
 }
 
 function appendFormalityIndicator(formalityScore){
-	if(formalityScore == NaN){
+	if(formalityScore != NaN){
 		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
 	}else{
 		formalityHTML = "<h6>We don't have enough data to analyze your formality score.<br>Please provide a longer text.</h6>";
@@ -88,7 +89,8 @@ function appendFormalitySuggestions(wordSuggestions){
 	var suggestionHTML = ""
 	if(wordSuggestions != ""){
 		for (var i = 0; i < wordSuggestions.length; i++){
-			suggestionHTML = "<hr><h4>How you can improve:</h4><dl class='dl-horizontal'>" + "<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>"
+			var item = "<hr><h4>How you can improve:</h4><dl class='dl-horizontal'>" + "<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>";
+			suggestionHTML = suggestionHTML.concat(item);
 		}
 		suggestionHTML = suggestionHTML.concat("</dl>");
 	} else {
