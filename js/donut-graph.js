@@ -40,19 +40,13 @@ function createToneChart(responseData){
 	.range(["#FB5607", "#FFBE0B", "#FF006E", "#3A86FF", "#8338EC"]);
 
 
-	function randomData (){
+	function dataToPlot (){
 		return data.map(function(dataPoint){
 			return { label: dataPoint.tone_name, value: dataPoint.score }
 		});
 	}
 
-	change(randomData());
-
-	d3.select(".randomize")
-	.on("click", function(){
-		change(randomData());
-	});
-
+	change(dataToPlot());
 
 	function change(data) {
 
