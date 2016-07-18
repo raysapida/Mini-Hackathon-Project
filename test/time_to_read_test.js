@@ -1,5 +1,3 @@
-// let { expect } = require('chai');
-// require('./public/js/time_to_read.js');
 var expect = chai.expect;
 
 describe("time_to_read.js",function(){
