@@ -1,7 +1,6 @@
 .main-content{
   height: 690px;
   margin: auto;
-  width: 150%;
   padding: 10px;
 }
 
@@ -22,6 +21,8 @@ h2 {
 .analysis{
   background-color: #A4D800;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container{
@@ -31,7 +32,6 @@ h2 {
 
 body{
   font-family: "Raleway";
-  width: 960px;
   height: 500px;
   position: relative;
 }
@@ -39,10 +39,6 @@ body{
 svg{
 	width: 500px;
 	height: 200px;
-	/*width: 1000%;*/
-	/*height: 1000%;*/
-	/*max-width: 100%;*/
-
 }
 
 path.slice{
@@ -82,7 +78,14 @@ polyline{
 	background-color: #F08D21;
 }
 
-
 .result-wrapper{
-	overflow: scroll;
+	overflow-y: scroll;
+}
+
+.word-count{
+  display: inline-block;
+}
+
+dd{
+  text-align: left;
 }

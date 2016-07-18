@@ -65,8 +65,8 @@ function appendTopWords(topWords){
   topWordsHTML = ""
 
   for(var i = 0; i < topWords.length; i++){
-    topWordsHTML = topWordsHTML.concat("<span class='label label-primary'>" + topWords[i][0] + "</span>" + "<span class='label label-danger'>" + topWords[i][1] + "</span>" + "&nbsp;");
+    topWordsHTML = topWordsHTML.concat("<span class='word-count'><span class='label label-primary'>" + topWords[i][0] + "</span>" + "<span class='label label-danger'>" + topWords[i][1] + "</span>" + "&nbsp;" + "</span>");
   }
 
-  $("#top-words").append(topWordsHTML);
+  $("#top-words").append(topWordsHTML).css({"font-size": "1.5em", "height": "120px"});
 }

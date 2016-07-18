@@ -76,10 +76,10 @@ function formalityCounter(obj){
 }
 
 function appendFormalityIndicator(formalityScore){
-	if(formalityScore != NaN){
-		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
-	}else{
+	if (isNaN(formalityScore)){
 		formalityHTML = "<h6>We don't have enough data to analyze your formality score.<br>Please provide a longer text.</h6>";
+	}else{
+		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
 	}
 	$("#formality-score").append(formalityHTML);
 
@@ -87,14 +87,16 @@ function appendFormalityIndicator(formalityScore){
 
 function appendFormalitySuggestions(wordSuggestions){
 	var suggestionHTML = ""
+	suggestionHTML = suggestionHTML.concat("<hr>");
 	if(wordSuggestions != ""){
+		suggestionHTML = suggestionHTML.concat("<h4>How you can improve:</h4>");
 		for (var i = 0; i < wordSuggestions.length; i++){
-			var item = "<hr><h4>How you can improve:</h4><dl class='dl-horizontal'>" + "<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>";
+			var item = "<dl class='dl-horizontal'>" + "<dt>" + wordSuggestions[i].word + "</dt>" + "<dd>" + wordSuggestions[i].comment + "</dd>";
 			suggestionHTML = suggestionHTML.concat(item);
 		}
 		suggestionHTML = suggestionHTML.concat("</dl>");
 	} else {
-		suggestionHTML = "<h6>We don't have enough data to provide suggestions on improving your formality score.</h6>"
+		suggestionHTML = suggestionHTML.concat("<h6>We don't have enough data to provide suggestions on improving your formality score.</h6>");
 	}
 
 	$("#formality-score").append(suggestionHTML);
