@@ -12,6 +12,7 @@ function wordCount(str){
   var sortedWords = sortByOccurence(wordMap);
   var topWords = selectTopWords(sortedWords, 5);
   var topWordsHTML = appendTopWords(topWords);
+  return topWords;
 }
 
 function removeKeyWords(keepArray,toRemoveArray){
