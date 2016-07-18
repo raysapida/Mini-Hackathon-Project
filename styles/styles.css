@@ -1,7 +1,6 @@
 .main-content{
   height: 690px;
   margin: auto;
-  /*width: 150%;*/
   padding: 10px;
 }
 
@@ -33,17 +32,13 @@ h2 {
 
 body{
   font-family: "Raleway";
-/*  width: 960px;
-*/  height: 500px;
+  height: 500px;
   position: relative;
 }
 
 svg{
 	width: 500px;
 	height: 200px;
-	/*width: 1000%;*/
-	/*height: 1000%;*/
-	/*max-width: 100%;*/
 }
 
 path.slice{
