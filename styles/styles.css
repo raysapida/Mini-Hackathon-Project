@@ -86,10 +86,6 @@ polyline{
   display: inline-block;
 }
 
-dt{
-  font-weight: bold;
-}
-
 dd{
   text-align: left;
 }
