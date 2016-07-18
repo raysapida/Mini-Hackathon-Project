@@ -3,6 +3,7 @@ function timeToRead(str){
   var wordArray = str.split(' ');
   var timeInSeconds = (wordArray.length / wordsPerMinute) * 60;
   appendTimeToRead(Math.floor(timeInSeconds));
+  return Math.floor(timeInSeconds);
 }
 
 
