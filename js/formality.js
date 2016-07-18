@@ -77,10 +77,8 @@ function formalityCounter(obj){
 
 function appendFormalityIndicator(formalityScore){
 	if (isNaN(formalityScore)){
-		console.log("Not a number")
 		formalityHTML = "<h6>We don't have enough data to analyze your formality score.<br>Please provide a longer text.</h6>";
 	}else{
-		console.log(formalityScore)
 		formalityHTML = "<h3>"+ formalityScore + "% <small>Formality Score</small></h3>";
 	}
 	$("#formality-score").append(formalityHTML);
