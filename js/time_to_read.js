@@ -6,9 +6,8 @@ function timeToRead(str){
 }
 
 
-
 function appendTimeToRead(seconds){
   timeToReadHTML = "<h5>It will taken an average person <span class='lead'>" + seconds + " seconds</span> to read this text.</h5>"
 
-  $("#time-to-read").append(timeToReadHTML).css({"height": "100px"});;
+  $("#time-to-read").append(timeToReadHTML).css({"height": "120px"});;
 }

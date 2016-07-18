@@ -68,5 +68,5 @@ function appendTopWords(topWords){
     topWordsHTML = topWordsHTML.concat("<span class='word-count'><span class='label label-primary'>" + topWords[i][0] + "</span>" + "<span class='label label-danger'>" + topWords[i][1] + "</span>" + "&nbsp;" + "</span>");
   }
 
-  $("#top-words").append(topWordsHTML).css({"font-size": "1.5em", "height": "100px"});
+  $("#top-words").append(topWordsHTML).css({"font-size": "1.5em", "height": "120px"});
 }
