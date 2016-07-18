@@ -1,4 +1,5 @@
 ![SentiMail Logo](/public/assets/logo_sentimail.png "Logo Sentimail")
+
 [Sentimail](https://github.com/raysapida/Mini-Hackathon-Project) - **The Better Way to Write Emails!**
 
 [![Travis](https://img.shields.io/travis/nosir/cleave.js.svg?maxAge=2592000)](https://travis-ci.org/nosir/cleave.js)
@@ -43,11 +44,11 @@ A user can trype directly in the textarea or copy/paste an existing draft.
 ![SentiMail landingpage](/screenshots/landing_page_email.png "SentiMail landing page with draft e-mail")
 
 Once the user clicks 'Analyze', the content is analyzed and key insights are displayed:
--A User can view the Read Time.
--A User can view the Top 5 Words.
--A User can analyze the Sentiment of the Text, displaying emotions such as Anger, Sadness, Joy, etc.
--A User can analyze the Tone of the Test.
--A User can be given Suggestions based on the context.
+- A User can view the Read Time.
+- A User can view the Top 5 Words.
+- A User can analyze the Sentiment of the Text, displaying emotions such as Anger, Sadness, Joy, etc.
+- A User can analyze the Tone of the Test.
+- A User can be given Suggestions based on the context.
 
 ![SentiMail results](/screenshots/results.png "SentiMail results")
 
