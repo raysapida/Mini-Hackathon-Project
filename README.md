@@ -40,7 +40,8 @@ Check out the Live Demo here:
 
 #### <a name="features"></a> Features
 
-A user can trype directly in the textarea or copy/paste an existing draft. 
+A user can trype directly in the textarea or copy/paste an existing draft e-mail.
+
 ![SentiMail landingpage](/screenshots/landing_page_email.png "SentiMail landing page with draft e-mail")
 
 Once the user clicks 'Analyze', the content is analyzed and key insights are displayed:
