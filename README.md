@@ -9,7 +9,7 @@ Sentimail is a web application, soon to be chrome extension that reduces the pai
 # Table of Contents
 * [Why](#why)
 * [Team Members](#team-members)
-* [Project Demo](#project-demo)
+* [Live Project Demo](#project-demo)
 * [Instructions](#instructions)
 * [Features](#features)
 * [Resources Used](#resources)
@@ -26,7 +26,7 @@ Before Sentimail, we spent countless hours revising an email draft, not knowing 
 * [Sneha Narasimhan](https://github.com/snehabn)
 * [Umar Bajwa](https://github.com/UmarFBajwa)
 
-#### <a name="project-demo"></a>Project Demo
+#### <a name="project-demo"></a> Live Project Demo
 
 [Sentimail- A Better Way to Write Emails](http://sentimail.herokuapp.com/)
 
