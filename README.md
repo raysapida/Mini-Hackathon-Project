@@ -28,15 +28,12 @@ Before Sentimail, we spent countless hours revising an email draft, not knowing 
 
 #### <a name="project-demo"></a>Project Demo
 
-[Sentimail- A Better Way to Write Emails](https://github.com/raysapida/Mini-Hackathon-Project)
+[Sentimail- A Better Way to Write Emails](http://sentimail.herokuapp.com/)
 
 #### <a name="instructions"></a> Instructions
 
 A User can enter any text. Then after pressing the 'Analyze' button, the Results will display
 the analysis performed on that text and will include any suggestions.
-
-Check out the Live Demo here:
-
 
 #### <a name="features"></a> Features
 
