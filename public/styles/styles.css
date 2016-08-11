@@ -1,5 +1,5 @@
 .main-content{
-  height: 670px;
+  height: 400px;
   margin: auto;
   padding: 10px;
 }
@@ -9,14 +9,18 @@ h2 {
 	font-weight: bold;
 }
 
+#text-to-analyze{
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+}
+
 .analysis, .input {
   border-radius: 25px;
 }
 
-.input{
+/*.input{
   background-color: #00A0E8;
   height: 100%;
-}
+}*/
 
 .analysis{
   background-color: #A4D800;
@@ -94,13 +98,10 @@ dd{
   height: 100%;
 }
 
-body {
-  background-image: url('../assets/main-bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+body { 
+  background: url(../assets/main-bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
 }
