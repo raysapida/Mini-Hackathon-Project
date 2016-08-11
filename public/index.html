@@ -30,6 +30,7 @@
   <script src = "https://d3js.org/d3.v3.min.js"></script>
   <!-- Scripts -->
   <script src = "js/main.js"></script>
+  <script src = "js/show_results.js"></script>
   <script src = "js/tone_analyzer.js"></script>
   <script src = "js/donut-graph.js"></script>
   <script src = "js/word_count.js"></script>
@@ -99,54 +100,32 @@
             <div class="col-md-6 input">
               <h2>Text to analyze</h2>
               <form>
-               <textarea class="form-control" id="text-to-analyze" rows="25" placeholder="Please type or copy text here..."></textarea><br>
+               <textarea class="form-control" id="text-to-analyze" rows="20" placeholder="Please type or copy text here..."></textarea><br>
                <button id="analyze" class="btn btn-primary"><span>Analyze</span></button>
              </form>
             </div>
          
             <div class="col-md-6 analysis result-wrapper">
               <h2>Results</h2>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Time to Read</div>
-                    <div class="panel-body" id="time-to-read"></div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Top 5 Words</div>
-                    <div class="panel-body" id="top-words"></div>
-                  </div>
-                </div>
-              </div>
-              <br>
-
-              <div class="panel panel-default">
-                <div class="panel-heading">Formality Indicator</div>
-                <div class="panel-body" id="formality-score"></div>
-              </div>
-
-              <br>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Emotions Analysis</div>
-                    <div class="panel-body">
-                      <div id="donut-chart">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">Tone Analysis</div>
-                    <div class="panel-body">
-                      <div id="tone">
-                      </div>
-                    </div>
-                  </div>
+              <div id="result-wrapper">
+                <div class="result-placeholder">
+                  <h4>Sentimail helps you to write better e-mails.</h4>
+                  <p>Simply type your e-mail or copy an existing draft and click on 'Analyze'</p>
+                  <p>
+                    Sentimail will analyze your draft on no less than 5 criteria:
+                    <dl class="dl-horizontal">
+                      <dt>Time To Read</dt>
+                      <dd>How long it takes an average reader to read the message</dd>
+                      <dt>Word Frequency</dt>
+                      <dd>Overview of the top 5 most occuring words. This might indicate when synonyms are opportune</dd>
+                      <dt>Formality Index</dt>
+                      <dd>Indication of the formality level of your e-mail. Sentimail provides you with suggestions on how to make your e-mail more formal</dd>
+                      <dt>Emotion Analysis</dt>
+                      <dd>Analysis of the dominant emotions in the copy helps you to better conceive the message <br><small>(powered by IBM Watson&#8482;)</small></dd>
+                      <dt>Tone Analysis</dt>
+                      <dd>Analysis of the tone of voice to be more persuasive <br><small>(powered by IBM Watson&#8482;)</small></dd>
+                    </dl
+                  </p>
                 </div>
               </div>
             </div>

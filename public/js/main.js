@@ -4,6 +4,7 @@ $(document).ready(function(){
     $( this ).prop('disabled', true);
     event.preventDefault();
     if ($(this).disabled !== true) {
+      showResults();
       var body = document.getElementById('text-to-analyze').value
       wordCount(body);
       analyzeTone(body);
