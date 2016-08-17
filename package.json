@@ -1,7 +1,7 @@
 {
   "name": "sentimail-client",
   "version": "1.0.0",
-  "description": "[Sentimail](https://github.com/raysapida/Mini-Hackathon-Project) - **The Better Way to Write Emails!**",
+  "description": "[Sentimail](https://github.com/UmarFBajwa/Sentimail) - **The Better Way to Write Emails!**",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raysapida/Mini-Hackathon-Project.git"
+    "url": "git+https://github.com/UmarFBajwa/Sentimail.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/raysapida/Mini-Hackathon-Project/issues"
+    "url": "https://github.com/UmarFBajwa/Sentimail/issues"
   },
-  "homepage": "https://github.com/raysapida/Mini-Hackathon-Project#readme",
+  "homepage": "https://github.com/UmarFBajwa/Sentimail#readme",
   "dependencies": {
     "express": "^4.14.0"
   }

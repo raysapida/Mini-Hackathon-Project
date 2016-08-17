@@ -5,23 +5,23 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <title>Sentimail - Write better e-mails</title>
 
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  
+  <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png">
+
   <meta name="description" content="The SentiMail web application and browser extension assist users by analyzing and highlighting key information that the writer is not necessarily aware. Furthermore, the program provides suggestions on how to improve the formality of the email when requested.">
-  
+
   <meta name="author" content="Olya Royall, Raymond Sapida, Robin Soubry, Sneha Narasimhan, Umar Bajwa">
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- Sentimail styles -->
-  <link rel="stylesheet" type="text/css" href="styles/styles.css">
-  <link rel="stylesheet" type="text/css" href="styles/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="public/styles/sidebar.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
-  
+
   <!-- JQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Boostrap CDN -->
@@ -29,14 +29,14 @@
   <!-- D3 CDN -->
   <script src = "https://d3js.org/d3.v3.min.js"></script>
   <!-- Scripts -->
-  <script src = "js/main.js"></script>
-  <script src = "js/show_results.js"></script>
-  <script src = "js/tone_analyzer.js"></script>
-  <script src = "js/donut-graph.js"></script>
-  <script src = "js/word_count.js"></script>
-  <script src = "js/time_to_read.js"></script>
-  <script src = "js/formality.js"></script>
-  <script src = "js/emotion_chart.js"></script>
+  <script src = "public/js/main.js"></script>
+  <script src = "public/js/show_results.js"></script>
+  <script src = "public/js/tone_analyzer.js"></script>
+  <script src = "public/js/donut-graph.js"></script>
+  <script src = "public/js/word_count.js"></script>
+  <script src = "public/js/time_to_read.js"></script>
+  <script src = "public/js/formality.js"></script>
+  <script src = "public/js/emotion_chart.js"></script>
 </head>
 
 <body>
@@ -83,7 +83,7 @@
             </li>
         </ul>
       </div><!-- /#sidebar-wrapper -->
-      
+
       <!-- Page Content -->
       <div id="page-content-wrapper">
           <div class="container-fluid xyz">
@@ -104,7 +104,7 @@
                <button id="analyze" class="btn btn-primary"><span>Analyze</span></button>
              </form>
             </div>
-         
+
             <div class="col-md-6 analysis result-wrapper">
               <h2>Results</h2>
               <div id="result-wrapper">
