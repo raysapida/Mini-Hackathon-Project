@@ -1,6 +1,6 @@
 ![SentiMail Logo](/public/assets/logo_sentimail.png "Logo Sentimail")
 
-[Sentimail](https://github.com/raysapida/Mini-Hackathon-Project) - **The Better Way to Write Emails!**
+[Sentimail](https://github.com/UmarFBajwa/Sentimail) - **The Better Way to Write Emails!**
 
 [![Travis](https://img.shields.io/travis/nosir/cleave.js.svg?maxAge=2592000)](https://travis-ci.org/nosir/cleave.js)
 
@@ -15,7 +15,7 @@ Sentimail is a web application, soon to be chrome extension that reduces the pai
 * [Resources Used](#resources)
 
 #### <a name="why"></a>Why?
-Why create Sentimail? 
+Why create Sentimail?
 
 Before Sentimail, we spent countless hours revising an email draft, not knowing whether it was too long, conveyed the wrong emotions, or if the message was clear. The User Experience of writing emails can really be painful. That all changes with Sentimail...
 
