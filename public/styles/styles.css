@@ -7,10 +7,12 @@
 h2 {
 	color: white;
 	font-weight: bold;
+  text-align: center;
 }
 
 #text-to-analyze{
   box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+  width: 100%;
 }
 
 .container{
@@ -88,8 +90,8 @@ dd{
   height: 100%;
 }
 
-body { 
-  background: url(../assets/main-bg.jpg) no-repeat center center fixed; 
+body {
+  background: url(../assets/main-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
