@@ -1,5 +1,5 @@
 .main-content{
-  height: 670px;
+  height: 400px;
   margin: auto;
   padding: 10px;
 }
@@ -7,22 +7,12 @@
 h2 {
 	color: white;
 	font-weight: bold;
+  text-align: center;
 }
 
-.analysis, .input {
-  border-radius: 25px;
-}
-
-.input{
-  background-color: #00A0E8;
-  height: 100%;
-}
-
-.analysis{
-  background-color: #A4D800;
-  height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+#text-to-analyze{
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+  width: 100%;
 }
 
 .container{
@@ -78,8 +68,14 @@ polyline{
 	background-color: #F08D21;
 }
 
-.result-wrapper{
-	overflow-y: scroll;
+#result-wrapper{
+/*	overflow-y: scroll;
+*/  height: 414px;
+  background-color: white;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+    overflow-x: hidden;
+    border: 1px solid gray;
+    border-radius: 4px;
 }
 
 .word-count{
@@ -88,4 +84,21 @@ polyline{
 
 dd{
   text-align: left;
+}
+
+.logo-sentimail{
+  height: 100%;
+}
+
+body {
+  background: url(../assets/main-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.result-placeholder{
+  padding: 20px;
+  margin: auto;
 }
