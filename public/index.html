@@ -8,7 +8,7 @@
 
   <title>Sentimail - Write better e-mails</title>
 
-  <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
 
   <meta name="description" content="The SentiMail web application and browser extension assist users by analyzing and highlighting key information that the writer is not necessarily aware. Furthermore, the program provides suggestions on how to improve the formality of the email when requested.">
 
@@ -18,8 +18,8 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- Sentimail styles -->
-  <link rel="stylesheet" type="text/css" href="public/styles/styles.css">
-  <link rel="stylesheet" type="text/css" href="public/styles/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/sidebar.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 
   <!-- JQuery CDN -->
@@ -29,14 +29,14 @@
   <!-- D3 CDN -->
   <script src = "https://d3js.org/d3.v3.min.js"></script>
   <!-- Scripts -->
-  <script src = "public/js/main.js"></script>
-  <script src = "public/js/show_results.js"></script>
-  <script src = "public/js/tone_analyzer.js"></script>
-  <script src = "public/js/donut-graph.js"></script>
-  <script src = "public/js/word_count.js"></script>
-  <script src = "public/js/time_to_read.js"></script>
-  <script src = "public/js/formality.js"></script>
-  <script src = "public/js/emotion_chart.js"></script>
+  <script src = "js/main.js"></script>
+  <script src = "js/show_results.js"></script>
+  <script src = "js/tone_analyzer.js"></script>
+  <script src = "js/donut-graph.js"></script>
+  <script src = "js/word_count.js"></script>
+  <script src = "js/time_to_read.js"></script>
+  <script src = "js/formality.js"></script>
+  <script src = "js/emotion_chart.js"></script>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
           <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
         </button>
-        <a class="navbar-brand" href="/"><img class="logo-sentimail" src="public/assets/logo_sentimail_small.png" alt="Sentimail Logo" alt="logo Sentimail"></a>
+        <a class="navbar-brand" href="/"><img class="logo-sentimail" src="assets/logo_sentimail_small.png" alt="Sentimail Logo" alt="logo Sentimail"></a><div style="margin-top: 4%; font-size: 1.2em;"> "A better way to write e-mails!"</div>
     </div><!-- navbar-header-->
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -55,6 +55,7 @@
           <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About Us</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Press</a></li>
         <li><a href="#">Contact</a></li>
@@ -68,9 +69,6 @@
         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-files-o fa-stack-1x "></i></span>Templates</a>
-            </li>
-            <li>
-                <a href="#"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-lightbulb-o fa-stack-1x "></i></span>Suggestions</a>
             </li>
             <li>
                 <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-pencil fa-stack-1x "></i></span>Saved Drafts</a>
@@ -89,8 +87,7 @@
           <div class="container-fluid xyz">
             <div class="row">
                 <div class="col-lg-12">
-                  <h1>Sentimail - A better way to write e-mails.</h1>
-                  <p>This application analyses you e-mail on the time to read, the number of occurences of specific words as well as the tone of voice.</p>
+                  <p></p>
                 </div>
             </div>
         </div>
@@ -135,6 +132,6 @@
       <!-- /#page-content-wrapper -->
     </div>
 
-  <script src="public/js/sidebar-menu.js"></script>
+  <script src="js/sidebar-menu.js"></script>
 </body>
 </html>
