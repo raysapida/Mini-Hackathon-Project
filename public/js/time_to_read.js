@@ -6,8 +6,18 @@ function timeToRead(str){
 }
 
 
-function appendTimeToRead(seconds){
-  timeToReadHTML = "<h5>It will taken an average person <span class='lead'>" + seconds + " seconds</span> to read this text.</h5>"
+function appendTimeToRead(time){
+  var timeToReadHTML = '';
+  if(time <= 60){
+    timeToReadHTML = "<h5>It will take an average person <span class='lead'> less than a minute </span> to read this text.</h5>"
+  } else {
+      var minutes = Math.round(time/60);
+      if (minutes > 1) {
+        timeToReadHTML = "<h5>It will take an average person <span class='lead'>" + minutes + " mins </span> to read this text.</h5>";
+      } else {
+          timeToReadHTML = "<h5>It will take an average person <span class='lead'>" + minutes + " min </span> to read this text.</h5>";
+      }
+    }
 
-  $("#time-to-read").append(timeToReadHTML).css({"height": "120px"});;
+  $("#time-to-read").append(timeToReadHTML).css({"height": "120px"});
 }
