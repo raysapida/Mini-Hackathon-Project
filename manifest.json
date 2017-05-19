@@ -3,7 +3,31 @@
   "manifest_version" : 2,
   "version" : "0.1",
   "description" : "Here goes the description",
+  "content_scripts" : [
+    { "matches" : ["https://mail.google.com/*"],
+      "css" : [],
+      "js" : ["content.js"]
+    }
+  ],
+
+  "background" : {
+    "scripts" : [
+      "background.js"
+    ]
+  },
+
+  "web_accessible_resources" : [
+    "jquery-3.0.0.min.js",
+    "gmail.js",
+    "main.js"
+  ],
+
   "browser_action" : {
-    "default_icon" : "icon.png"
-  }
+    "default_icon" : "icon.png",
+    "default_popup" : "default_pop_up.html"
+  },
+
+  "permissions" : [
+    "activeTab"
+    ]
 }
